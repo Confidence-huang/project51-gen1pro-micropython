@@ -1,0 +1,8 @@
+__pycache__/
+.pytest_cache/
+.venv/
+*.pyc
+*.log
+src/settings.py
+src/*.pem
+src/*.cer
