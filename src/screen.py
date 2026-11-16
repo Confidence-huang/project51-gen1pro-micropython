@@ -1,4 +1,4 @@
-"""按移远官方 SPI1/F12/D14 接法在 160×128 屏上同时显示四项模拟数据。"""
+"""按移远官方 SPI1/F12/D14 接法在 160×128 屏上显示同一快照。"""
 
 
 def open_screen():
@@ -13,13 +13,17 @@ def open_screen():
 
 
 def show_snapshot(lcd, snapshot, link_status):
-    """每次全屏重画，四行固定间距；ASCII 字体避开固件中文字库差异。"""
+    """每次全屏重画；无 K230 时人数留空，光敏原码明确标 ADC。"""
+    real_environment = snapshot.get("light_raw_u16") is not None
+    people = "--" if snapshot["people_count"] is None else str(snapshot["people_count"])
+    light = ("Light ADC: %d" % snapshot["light_raw_u16"] if real_environment
+             else "Light: %d lx" % snapshot["light_lux"])
     lcd.fill_screen(lcd.BLACK)
-    lcd.show_string(4, 2, "CLASSROOM  SIM", lcd.CYAN, lcd.BLACK, 16)
-    lcd.show_string(4, 24, "People: %d" % snapshot["people_count"], lcd.WHITE, lcd.BLACK, 16)
+    lcd.show_string(4, 2, "CLASSROOM  %s" % ("ENV" if real_environment else "SIM"), lcd.CYAN, lcd.BLACK, 16)
+    lcd.show_string(4, 24, "People: %s" % people, lcd.WHITE, lcd.BLACK, 16)
     lcd.show_string(4, 46, "Temp: %.1f C" % snapshot["temperature_c"], lcd.WHITE, lcd.BLACK, 16)
-    lcd.show_string(4, 68, "RH: %d %%" % snapshot["humidity_pct"], lcd.WHITE, lcd.BLACK, 16)
-    lcd.show_string(4, 90, "Light: %d lx" % snapshot["light_lux"], lcd.WHITE, lcd.BLACK, 16)
+    lcd.show_string(4, 68, "RH: %.1f %%" % snapshot["humidity_pct"], lcd.WHITE, lcd.BLACK, 16)
+    lcd.show_string(4, 90, light, lcd.WHITE, lcd.BLACK, 16)
     lcd.show_string(4, 112, link_status[:19], lcd.YELLOW, lcd.BLACK, 12)
     lcd.flush()
 

@@ -74,8 +74,8 @@ def connect_mqtt(settings):
 
 
 def publish_snapshot(client, topic, payload):
-    """QoS 1 保证 Broker 确认；消费端仍要按 device_id+seq 去重。"""
-    client.publish(topic.encode("utf-8"), payload, qos=1)
+    """QoS 1 等待 Broker 确认；retain 在云端保留最新一条供新网页会话读取。"""
+    client.publish(topic.encode("utf-8"), payload, qos=1, retain=True)
 
 
 if __name__ == "__main__":

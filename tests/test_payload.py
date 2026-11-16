@@ -35,6 +35,16 @@ class ClassroomPayloadTests(unittest.TestCase):
         for field in ("people_count", "temperature_c", "humidity_pct", "light_lux"):
             self.assertNotEqual(first[field], second[field])
 
+    def test_real_environment_keeps_uncalibrated_light_and_missing_people_explicit(self):
+        snapshot = classroom.make_environment_snapshot(
+            145, "2026-11-16T07:00:00Z", "f413zh-gen1pro-01", "room01", (25.2, 49.4, 22917))
+        decoded = json.loads(classroom.encode_snapshot(snapshot))
+        self.assertIs(decoded["simulated"], False)
+        self.assertIsNone(decoded["people_count"])
+        self.assertIsNone(decoded["light_lux"])
+        self.assertEqual(decoded["light_raw_u16"], 22917)
+        self.assertEqual(decoded["temperature_c"], 25.2)
+
 
 if __name__ == "__main__":
     unittest.main()
