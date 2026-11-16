@@ -22,3 +22,17 @@ def show_snapshot(lcd, snapshot, link_status):
     lcd.show_string(4, 90, "Light: %d lx" % snapshot["light_lux"], lcd.WHITE, lcd.BLACK, 16)
     lcd.show_string(4, 112, link_status[:19], lcd.YELLOW, lcd.BLACK, 12)
     lcd.flush()
+
+
+if __name__ == "__main__":
+    # 电脑通过 mpremote run 临时执行本文件时，只检查四项排版。
+    # 固定模拟值便于与屏幕逐项对照；这里不读取传感器或连接网络。
+    demo_snapshot = {
+        "people_count": 3,
+        "temperature_c": 24.3,
+        "humidity_pct": 47,
+        "light_lux": 320,
+    }
+    demo_lcd = open_screen()
+    show_snapshot(demo_lcd, demo_snapshot, "DISPLAY TEST")
+    print("SCREEN_DEMO_DRAWN people=3 temp=24.3 humidity=47 light=320")
