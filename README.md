@@ -6,6 +6,8 @@
 
 `src/main.py` 触发周期采样；`src/environment.py` 从板载传感器采集；`src/classroom.py` 把同一次采样编码为 JSON；`src/screen.py` 在 LCD 同屏显示；`src/uplink.py` 经 EC200U/4G、NTP、TLS 与 MQTT 发布。`src/settings.example.py` 是不含秘密的配置模板。设备 `/flash` 中的 `settings.py` 和根 CA 必须独立放置，且不得提交 Git。
 
+当前板端配置可用 `uv run python provision.py --port COM15 --user classroom_test` 交互写入；串口号须以设备管理器现场显示为准。密码由终端隐藏输入，脚本在电脑内存组装配置并直接写入板端 `/flash/settings.py`，不会在电脑创建含密码文件；已有板端配置时拒绝覆盖。设备闪存仍可被有实物访问权的人读取，长期运行应改用仅允许发布该主题的专用账号，并在账号泄露时轮换密码。
+
 发布到 `classroom/room01/telemetry`，MQTT 3.1.1 over TLS，端口 8883，QoS 1。载荷示例：
 
 ```json
@@ -36,11 +38,11 @@
 2. 用户已提供 STM32CubeProgrammer 显示“下载验证成功”的截图；所选文件名在截图中未完整显示，故仍须用 VS Code 的版本任务或 Thonny Shell 确认 MicroPython 提示符和 `/flash`。不要执行全片擦除、解锁、Option Bytes 更改或 ST-LINK 固件升级。
 3. 实板已验证 `from st7735 import LCD`、`from quectel import Network`、`from umqtt.robust import MQTTClient`、`import tls` 可以导入；官方 LCD 例程及本工程实测布局已目视验收。4G 附着、DNS、UTC/NTP 和 EMQX TLS 握手均通过；下一步配置设备专用 MQTT 凭据并验证登录与发布。
 4. 复制 `src/settings.example.py` 到电脑本地 `src/settings.py`，填写 EMQX **设备专用发布账号**、实例公网域名和端口 8883；勿用网页只读账号。把与 EMQX 服务器证书链匹配的**根 CA PEM**保存为本地 `src/mqtt_ca.pem`。CA 必须与当前实例实际证书核对，不能直接拿上游示例证书冒充。
-5. 用 VS Code 的上传任务逐个将 `classroom.py`、`environment.py`、`screen.py`、`uplink.py`、`settings.py` 和根 CA 复制到设备 `/flash`；先从电脑打开 `main.py`，执行“板端：运行当前脚本（不上传）”，核对屏幕四行和 REPL `PUBLISHED device_id=... seq=...`。确认后才把 `main.py` 复制到 `/flash` 实现自启。若厂商固件不支持 mpremote 的 raw REPL，可用 Thonny 作为兼容备用入口。
+5. 将 `classroom.py`、`environment.py`、`screen.py`、`uplink.py` 和根 CA 复制到设备 `/flash`，再交互运行 `provision.py` 写入板端 `settings.py`。先从电脑打开 `main.py`，执行“板端：运行当前脚本（不上传）”，核对屏幕四行和 REPL `PUBLISHED device_id=... seq=...`。确认后才把 `main.py` 复制到 `/flash` 实现自启；覆盖原厂占位 `main.py` 前先在 E 盘备份。若厂商固件不支持 mpremote 的 raw REPL，可用 Thonny 作为兼容备用入口。
 6. 在 EMQX 在线调试订阅同一主题，核对 JSON、`simulated:true`、`device_id+seq` 和 UTC 时间；在网页设置中连接同一 EMQX 实例，核对相同序号与四项数值。断网重连、断电重启分别复验。电脑测试脚本或 EMQX 控制台手动发布，不算板端通过。
 
 ## 当前验收边界
 
-源码与电脑单元测试只能确认 JSON 字段、数值和屏幕布局逻辑。固件、屏幕引脚、NTP/RTC、TLS 库参数、CA 链、4G 注册、MQTT QoS 1 回执与网页实收均需在实板上逐段核验。固件 API 若与仓库例程有差异，先以 REPL 输出定位具体环节，再修改该层。
+本次已在实板核对 LCD、传感器、4G、NTP、TLS 与板端 MQTT 发布，并由 EMQX 订阅端把相同设备 ID/序号写入本机 SQLite。网页源码已支持实测 ADC 展示；公开 GitHub Pages 仍须在浏览器输入只读 MQTT 凭据后订阅，不把账号密码写进静态站点。当前 SQLite 在本机，EMQX retained 仅保存最新快照；多条历史若要让所有手机长期查看，仍需部署常在线 HTTPS 历史服务与持久磁盘。
 
 上游参考：移远官方 `https://github.com/quectel-develop/uniknect-micropython` 的 LCD、Network、`umqtt.robust`、`tls.SSLContext` 示例；源码未复制其测试账号或固定密码。
