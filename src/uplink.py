@@ -26,10 +26,12 @@ def synchronize_utc(ntp_host):
     try:
         channel.settimeout(5)
         channel.sendto(b"\x1b" + 47 * b"\0", addresses[0][-1])
-        packet = channel.recv(48)
+        # NTP 回包是二进制；厂商 recv/recvfrom 会尝试 UTF-8 解码并抛 UnicodeError。
+        packet = bytearray(48)
+        received = channel.readinto(packet)
     finally:
         channel.close()
-    if len(packet) < 48:
+    if received != 48:
         raise RuntimeError("NTP reply is too short")
     if packet[0] >> 6 == 3 or packet[1] == 0:
         raise RuntimeError("NTP server reports unsynchronized time")
@@ -74,3 +76,13 @@ def connect_mqtt(settings):
 def publish_snapshot(client, topic, payload):
     """QoS 1 保证 Broker 确认；消费端仍要按 device_id+seq 去重。"""
     client.publish(topic.encode("utf-8"), payload, qos=1)
+
+
+if __name__ == "__main__":
+    # 临时运行本文件仅校准和打印 UTC，不读取设备账号或建立 MQTT 会话。
+    demo_network = attach_4g()
+    try:
+        demo_utc = synchronize_utc("pool.ntp.org")
+        print("NTP_UTC_OK", demo_utc[:6])
+    finally:
+        demo_network.deinit()
