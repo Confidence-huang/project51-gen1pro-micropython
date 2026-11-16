@@ -1,6 +1,6 @@
 """通过 EC200U 建立 4G、可信 UTC、证书校验的 MQTT 连接并发布快照。"""
 
-import socket
+import usocket as socket
 import struct
 import time
 
