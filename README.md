@@ -14,7 +14,7 @@
 {"schema_version":1,"type":"telemetry","source":"stm32_micropython_aht20_ldr","simulated":false,"device_id":"f413zh-gen1pro-01","room_id":"room01","seq":848127600,"captured_at":"2026-11-16T07:00:00Z","people_count":null,"temperature_c":25.3,"humidity_pct":49.7,"light_lux":null,"light_raw_u16":23029}
 ```
 
-`seq` 为已校准 UTC 时钟的秒数（本固件的 epoch 是 2000 年），每次发布间隔至少 2 秒以免重复。板载光敏只得到 ADC 原码，没有适用当前板的 lux 标定曲线，所以 `light_lux` 必须为 `null`；网页和 LCD 显示“ADC”。程序从 NTP 同步 RTC；若同步失败、CA 缺失或证书校验失败，LCD 仍更新实测值，但不发布带假时间的消息。串口打印 `UPLINK_ERROR`，不会打印密码。QoS 1 发布使用 retain，EMQX 保存该主题**最新一条**；完整历史由独立订阅服务存储。
+`seq` 为已校准 UTC 时钟的秒数（本固件的 epoch 是 2000 年），每次发布间隔至少 2 秒以免重复。板载光敏只得到 ADC 原码，没有适用当前板的 lux 标定曲线，所以 `light_lux` 必须为 `null`；网页和 LCD 显示“ADC”。程序每 60 秒重新从 NTP 同步 RTC，修正实测发现的板端时钟漂移；若同步失败、CA 缺失或证书校验失败，LCD 仍更新实测值，但不发布带假时间的消息。串口打印 `UPLINK_ERROR`，不会打印密码。QoS 1 发布使用 retain，EMQX 保存该主题**最新一条**；完整历史由独立订阅服务存储。
 
 ## 电脑环境与静态验证
 

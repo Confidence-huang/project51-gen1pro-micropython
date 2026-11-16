@@ -16,6 +16,7 @@ def run():
     thermometer, light = environment.open_sensors()  # 只初始化一次，失败时不发布。
     network = None
     client = None
+    last_clock_sync_ms = None           # 厂商 RTC 运行时可能漂移，记录上次 NTP 校时的单调时刻。
     while True:
         display = None                     # 本轮采样失败时不沿用上一轮旧值。
         try:
@@ -26,8 +27,11 @@ def run():
 
             if network is None:
                 network = uplink.attach_4g()
-            if client is None:
+            if (last_clock_sync_ms is None or
+                    time.ticks_diff(time.ticks_ms(), last_clock_sync_ms) >= 60_000):
                 uplink.synchronize_utc(settings.NTP_HOST)
+                last_clock_sync_ms = time.ticks_ms()  # 每分钟重新校时，避免网页误判为过期数据。
+            if client is None:
                 client = uplink.connect_mqtt(settings)
 
             seq, captured_at = uplink.utc_sample_time()
