@@ -1,0 +1,87 @@
+{
+  "folders": [
+    { "name": "板端工程", "path": "." },
+    { "name": "官方例程（参考）", "path": "D:/GitHub/uniknect-micropython/uniknect-micropython" }
+  ],
+  "settings": {
+    "python.defaultInterpreterPath": "${workspaceFolder:板端工程}/.venv/Scripts/python.exe",
+    "files.exclude": {
+      "**/__pycache__": true,
+      "**/.pytest_cache": true
+    }
+  },
+  "extensions": {
+    "recommendations": ["ms-python.python", "ms-python.vscode-pylance"]
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "inputs": [
+      { "id": "serialPort", "type": "promptString", "description": "ST-LINK 虚拟串口（以设备管理器当前值为准）", "default": "COM15" },
+      { "id": "remoteTarget", "type": "promptString", "description": "设备目标路径；先确认 /flash 存在，再输入 :/flash/文件名", "default": ":/flash/test.py" }
+    ],
+    "tasks": [
+      {
+        "label": "MicroPython：检查当前文件语法",
+        "type": "process",
+        "command": "uv",
+        "args": ["run", "--project", "${workspaceFolder:板端工程}", "python", "${workspaceFolder:板端工程}/check_syntax.py", "${file}"],
+        "group": { "kind": "build", "isDefault": true },
+        "problemMatcher": [],
+        "presentation": { "reveal": "always", "panel": "shared" }
+      },
+      {
+        "label": "电脑：运行数据契约测试",
+        "type": "process",
+        "command": "uv",
+        "args": ["run", "--project", "${workspaceFolder:板端工程}", "python", "-m", "unittest", "discover", "-s", "${workspaceFolder:板端工程}/tests", "-v"],
+        "problemMatcher": [],
+        "presentation": { "reveal": "always", "panel": "shared" }
+      },
+      {
+        "label": "板端：列出串口",
+        "type": "process",
+        "command": "uv",
+        "args": ["run", "--project", "${workspaceFolder:板端工程}", "mpremote", "devs"],
+        "problemMatcher": []
+      },
+      {
+        "label": "板端：读取 MicroPython 版本",
+        "type": "process",
+        "command": "uv",
+        "args": ["run", "--project", "${workspaceFolder:板端工程}", "mpremote", "connect", "port:${input:serialPort}", "exec", "import sys; print(sys.implementation)"],
+        "problemMatcher": [],
+        "presentation": { "reveal": "always" }
+      },
+      {
+        "label": "板端：运行当前脚本（不上传）",
+        "type": "process",
+        "command": "uv",
+        "args": ["run", "--project", "${workspaceFolder:板端工程}", "mpremote", "connect", "port:${input:serialPort}", "run", "${file}"],
+        "problemMatcher": [],
+        "presentation": { "reveal": "always" }
+      },
+      {
+        "label": "板端：列出文件",
+        "type": "process",
+        "command": "uv",
+        "args": ["run", "--project", "${workspaceFolder:板端工程}", "mpremote", "connect", "port:${input:serialPort}", "fs", "ls"],
+        "problemMatcher": []
+      },
+      {
+        "label": "板端：上传当前脚本（写入设备）",
+        "type": "process",
+        "command": "uv",
+        "args": ["run", "--project", "${workspaceFolder:板端工程}", "mpremote", "connect", "port:${input:serialPort}", "fs", "cp", "${file}", "${input:remoteTarget}"],
+        "problemMatcher": [],
+        "presentation": { "reveal": "always" }
+      },
+      {
+        "label": "板端：打开 REPL",
+        "type": "shell",
+        "command": "uv run --project '${workspaceFolder:板端工程}' mpremote connect port:${input:serialPort} repl",
+        "problemMatcher": [],
+        "presentation": { "reveal": "always", "panel": "dedicated" }
+      }
+    ]
+  }
+}
