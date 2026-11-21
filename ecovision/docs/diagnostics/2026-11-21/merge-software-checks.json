@@ -1,0 +1,72 @@
+[
+  {
+    "name": "board-merged-original",
+    "exit_code": 0,
+    "summary": [
+      "test_four_simulated_readings_match_dashboard_contract (test_payload.ClassroomPayloadTests.test_four_simulated_readings_match_dashboard_contract) ... ok",
+      "test_invalid_sequence_and_time_are_rejected (test_payload.ClassroomPayloadTests.test_invalid_sequence_and_time_are_rejected) ... ok",
+      "test_real_environment_keeps_uncalibrated_light_and_missing_people_explicit (test_payload.ClassroomPayloadTests.test_real_environment_keeps_uncalibrated_light_and_missing_people_explicit) ... ok",
+      "",
+      "----------------------------------------------------------------------",
+      "Ran 4 tests in 0.001s",
+      "",
+      "OK"
+    ]
+  },
+  {
+    "name": "board-merged-contracts",
+    "exit_code": 0,
+    "summary": [
+      "test_strict_shape_rejects_mistakes (test_contracts.ContractTests.test_strict_shape_rejects_mistakes) ... ok",
+      "test_uart_crc_and_frame_vectors (test_contracts.ContractTests.test_uart_crc_and_frame_vectors) ... ok",
+      "test_validity_and_units_in_telemetry_fixtures (test_contracts.ContractTests.test_validity_and_units_in_telemetry_fixtures) ... ok",
+      "",
+      "----------------------------------------------------------------------",
+      "Ran 17 tests in 0.160s",
+      "",
+      "OK"
+    ]
+  },
+  {
+    "name": "board-merged-vision",
+    "exit_code": 0,
+    "summary": [
+      "UART EVH 000000000000000a",
+      "UART TX $EV1,000000000000000a,000000000000000b,0,0,0,0*53F3",
+      "UART EVH 000000000000000a",
+      "UART TX $EV1,000000000000000a,000000000000000b,1,1000,15,1*C46B",
+      "UART EVH 000000000000000a",
+      "UART TX $EV1,000000000000000a,000000000000000b,0,10,12,1*8B5F",
+      "UART TX $EV1,000000000000000a,000000000000000b,1,1010,0,1*3292",
+      "UART TX $EV1,000000000000000a,000000000000000b,2,2010,0,0*5B09"
+    ]
+  },
+  {
+    "name": "web-merged-original",
+    "exit_code": 0,
+    "summary": [
+      "ℹ tests 7",
+      "ℹ suites 0",
+      "ℹ pass 7",
+      "ℹ fail 0",
+      "ℹ cancelled 0",
+      "ℹ skipped 0",
+      "ℹ todo 0",
+      "ℹ duration_ms 278.4714"
+    ]
+  },
+  {
+    "name": "web-merged-contracts",
+    "exit_code": 0,
+    "summary": [
+      "test_strict_shape_rejects_mistakes (test_contracts.ContractTests.test_strict_shape_rejects_mistakes) ... ok",
+      "test_uart_crc_and_frame_vectors (test_contracts.ContractTests.test_uart_crc_and_frame_vectors) ... ok",
+      "test_validity_and_units_in_telemetry_fixtures (test_contracts.ContractTests.test_validity_and_units_in_telemetry_fixtures) ... ok",
+      "",
+      "----------------------------------------------------------------------",
+      "Ran 17 tests in 0.087s",
+      "",
+      "OK (skipped=1)"
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+✔ 完成真实 OpenAI 兼容多轮 Tool-Calling 并准确返回数据边界 (43.1352ms)
+✔ 上游模型不支持 tools 时自动走服务端预查上下文降级 (10.1743ms)
+✔ 未配置 Key 时返回 503 且状态接口优雅提示不报错 (8.2175ms)
+✔ HTTP 路由强制校验 Origin、方法、Body 上限与按 CF-Connecting-IP 限流 (119.2636ms)
+✔ 仅对白名单前端源返回只读 CORS 头 (0.6089ms)
+✔ 保留旧模拟载荷的 lx 数值 (1.7329ms)
+✔ 允许板载 AHT20 与未标定的光敏 ADC (0.7391ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 278.4714
