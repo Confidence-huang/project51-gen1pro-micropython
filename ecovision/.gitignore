@@ -1,0 +1,22 @@
+node_modules/
+.runtime/
+.secrets/
+__pycache__/
+*.pyc
+.env
+.env.*
+*.local.json
+*.pem
+*.key
+*.p12
+*.pfx
+*.sqlite
+*.sqlite3
+*.db
+*.uvoptx
+*.uvguix.*
+
+# Preserve the audited text evidence included in this snapshot.
+!firmware/**/*.log
+!tests/**/*.log
+!docs/**/*.log

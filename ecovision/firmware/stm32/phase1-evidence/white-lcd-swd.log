@@ -1,0 +1,33 @@
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.22.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : [redacted]
+ST-LINK FW  : V2J46M32
+Board       : --
+Voltage     : 3.24V
+SWD freq    : 4000 KHz
+Connect mode: Hot Plug
+Reset mode  : Software reset
+Device ID   : 0x463
+Revision ID : Rev A
+Device name : STM32F413/F423
+NVM size  : 1.5 MBytes
+Device type : MCU
+Device CPU  : Cortex-M4
+BL Version  : 0x90
+
+
+UPLOADING ...
+  File          : C:\Users\du335\AppData\Local\Temp\EcoVision-vector-a2dfa3b2-ec35-4790-b8b1-ac1720aa2475.bin
+  Size          : 256 Bytes
+  Address:      : 0x8000000
+Read progress:
+�������������������������������������������������� 0%
+�������������������������������������������������� 100%
+
+Data read successfully
+Time elapsed during read operation is: 00:00:00.004
+Vector table erased: False
+Keil-2026-11-12.hex vector match: False
+EcoVision_F413ZH-phase1-20261117.1.hex vector match: False

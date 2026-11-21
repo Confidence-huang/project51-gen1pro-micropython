@@ -1,0 +1,1 @@
+Reviewed .ioc, interrupt code, HAL config and Keil project in temporary CubeMX copy before merging. Application group and ARM Compiler 6 settings preserved.

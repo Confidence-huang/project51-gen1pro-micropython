@@ -1,0 +1,13 @@
+GCC: D:\STM32CUBEIDE\STM32CubeIDE_2.2.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.win32_1.0.100.202602081740\tools\bin\arm-none-eabi-gcc.exe
+Startup: C:\Users\du335\STM32Cube\Repository\STM32Cube_FW_F4_V1.28.3\Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\gcc\startup_stm32f413xx.s
+Linker: C:\Users\du335\STM32Cube\Repository\STM32Cube_FW_F4_V1.28.3\Projects\STM32F413ZH-Nucleo\Templates\STM32CubeIDE\STM32F413ZHTX_FLASH.ld
+build-gcc.ps1: 
+Line |
+  16 |  … st 1; try { & 'firmware/stm32/EcoVision_F413ZH/build-gcc.ps1' -GccBin …
+     |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Program 'arm-none-eabi-gcc.exe' failed to run: An error occurred trying to start process 'D:\STM32CUBEIDE\STM32CubeIDE_2.2.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.win32_1.0.100.202602081740\tools\bin\arm-none-eabi-gcc.exe' with working directory 'D:\移远杯项目文档\chatgpt work'. {无效的系统 DLL 重定位}
+系统 DLL %hs 在内存中重定位。应用程序将不能正常运行。
+由于 DLL %hs 占用了为 Windows 系统 DLL 保存的地址范围而产生了错误。应当与提供该 DLL 的供应商联系以得到新的 DLL。At D:\移远杯项目文档\chatgpt work\firmware\stm32\EcoVision_F413ZH\build-gcc.ps1:30 char:5
++     & $Program @Arguments 2>&1 | ForEach-Object { Write-Host $_ }
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~.
+

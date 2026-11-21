@@ -1,0 +1,8 @@
+{
+  "matched_real_uart_samples": 25,
+  "seq_first": 5,
+  "seq_last": 29,
+  "all_fields_match": true,
+  "all_captured_tx_crc_valid": true,
+  "scope": "recorded contiguous window; not a long-duration test"
+}

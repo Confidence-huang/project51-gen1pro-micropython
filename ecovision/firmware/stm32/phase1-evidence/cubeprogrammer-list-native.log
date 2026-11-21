@@ -1,0 +1,77 @@
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.22.0                  
+      -------------------------------------------------------------------
+
+=====  DFU Interface   =====
+
+No STM32 device in DFU mode connected
+
+===== J-Link Interface =====
+No J-Link/flasher probe detected.
+===== STLink Interface =====
+
+-------- Connected ST-LINK Probes List --------
+
+ST-Link Probe 0 :
+   ST-LINK SN  : [redacted]
+   ST-LINK FW  : V2J46M32
+   Access Port Number  : 1
+   Board Name  : 
+-----------------------------------------------
+
+=====  UART Interface  =====
+
+Total number of serial ports available: 10
+
+Port: COM8
+Location: \\.\COM8
+Description: ??????????
+Manufacturer: Microsoft
+
+Board Name  : 
+ST-LINK SN: [redacted]
+Port: COM4
+Location: \\.\COM4
+Description: STMicroelectronics STLink Virtual COM Port
+Manufacturer: STMicroelectronics
+
+Port: COM7
+Location: \\.\COM7
+Description: ??????????
+Manufacturer: Microsoft
+
+Port: COM9
+Location: \\.\COM9
+Description: Quectel USB MOS Port
+Manufacturer: Quectel Incorporated
+
+Port: COM10
+Location: \\.\COM10
+Description: Quectel USB AT Port
+Manufacturer: Quectel Incorporated
+
+Port: COM11
+Location: \\.\COM11
+Description: Quectel USB CP Log Port
+Manufacturer: Quectel Incorporated
+
+Port: COM12
+Location: \\.\COM12
+Description: Quectel USB NMEA Port
+Manufacturer: Quectel Incorporated
+
+Port: COM17
+Location: \\.\COM17
+Description: Quectel USB Diag Port
+Manufacturer: Quectel Incorporated
+
+Port: COM18
+Location: \\.\COM18
+Description: Quectel USB AP Log Port
+Manufacturer: Quectel Incorporated
+
+Port: COM16
+Location: \\.\COM16
+Description: Quectel USB Modem
+Manufacturer: Quectel Incorporated
+

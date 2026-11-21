@@ -1,0 +1,5 @@
+CubeMX 6.15.0 temporary generation and regeneration completed.
+UART4: PA0 TX AF8; PA1 RX AF8 with pull-up; 9600/8N1; priority 6, IRQ enabled.
+Preserved exactly one UART4 HAL IRQ dispatch and one TIM6 HAL IRQ dispatch.
+IR task and persistent user code retained after regeneration; custom App/AC6 project settings merged separately.
+Generated file backup: C:\Users\du335\AppData\Local\Temp\EcoVision-before-ir-c4570b8c-1e3e-4d1b-871e-c9d0cb74d32f

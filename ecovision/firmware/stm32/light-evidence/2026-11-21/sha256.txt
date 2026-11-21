@@ -1,0 +1,5 @@
+
+Algorithm : SHA256
+Hash      : AC545D696169B1656BE104185509E6CBCDCEFD9F0F264D1F328CA4E3A14CB2B7
+Path      : D:\移远杯项目文档\chatgpt work\firmware\stm32\light-evidence\2026-11-21\EcoVision_F413ZH-reed-light-20261121.3.hex
+

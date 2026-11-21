@@ -1,0 +1,5 @@
+STM32CubeProgrammer v2.22.0, SWD Hot Plug.
+Read command: -c port=SWD mode=HOTPLUG -r32 0x40020414 0x4
+t=382 ms GPIOB_ODR=0x00000080 PB7=1 PB0=0 PB14=0
+t=843 ms GPIOB_ODR=0x00000000 PB7=0 PB0=0 PB14=0
+PASS: observed PB7 low and high; SWD samples do not measure the period.

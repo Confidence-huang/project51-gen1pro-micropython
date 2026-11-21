@@ -2,6 +2,8 @@
 
 ## 当前快照
 
+- 2026-11-21 上传准备：独立 ecovision/ 目录新增队长本机 C/HAL、K230、算法及公共契约快照；原 src/ 的 MicroPython 基线不变。该快照不表示两套固件已集成，当前远端权限不足，尚未推送。
+
 - 项目：NUCLEO-F413ZH + UniKnect Gen1 Pro 的板载环境监测；K230 人数未接入。
 - 固件：官方 F413ZH MicroPython ELF 候选保存在上级项目 `work/`，本仓库不含固件。板端 COM15 已返回 `micropython` 1.27.0 preview，机器标识 `NUCLEO-F413ZH with STM32F413`；所选 ELF 文件名在原烧录截图中未完整显示。
 - 代码：`src/main.py` 周期采集并调度 LCD 与 4G 上报；`src/environment.py` 读取 AHT20/PC5；`src/classroom.py` 定义 JSON 契约，光敏只报 ADC 原码。
@@ -27,6 +29,8 @@
 - `check_syntax.py`：不运行板端代码的主机语法检查。
 
 ## 近期任务记录
+
+- 2026-11-21：按队长要求准备独立上传分支，只新增 ecovision/ 工程快照及本日志入口。原板端4项、快照契约17项、视觉32项主机检查通过；ZIP与逐文件哈希已核对。没有烧录、联网验收或部署，AUTO、当前C固件4G/ACK及长测仍待完成。连接账号对原仓库无推送权限，下一步取得权限后上传审查，不直接合并main。
 
 - 2026-11-18：官方固件重烧后完成板端恢复与自启验收：恢复 `classroom.py`、`environment.py`、`screen.py`、`uplink.py`、`mqtt_ca.pem` 与 `main.py` 至 `/flash`（逐文件 SHA256 与本地一致），用户交互写入 `/flash/settings.py`（密码未落盘）。软复位后连续打印 `PUBLISHED`；用户目视确认 LCD 实显（`Temp: 27.1 C`、`RH: 28.9 %`、`Light ADC: 18292`、`4G MQTT: sent`），并实测按 NUCLEO 物理 `RESET` 后先白屏再自动恢复显示与上报。主机 4 项单测与 7 份脚本语法检查全部通过，全历史安全扫描无凭据或无关代码；准备绑定并推送至公开 GitHub 远端。
 - 2026-11-18：核对本机 Thonny 4.1.7 仍有卸载项与程序文件，完整备份并逐文件 SHA256 校验后运行原安装目录的卸载程序；退出码 0，卸载项与安装目录均已消失。README 改为 VS Code/uv/mpremote 操作与测试命令，四项数据契约测试通过；未改板端固件或设备文件。

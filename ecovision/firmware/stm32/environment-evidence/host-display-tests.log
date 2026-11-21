@@ -1,0 +1,4 @@
+test_lcd_view.c
+lcd_view.c
+正在生成代码...
+PASS: LCD render bounds, valid zero, count 12, invalid placeholder, wait state, out-of-range suppression, 0..20 and uint32 seq

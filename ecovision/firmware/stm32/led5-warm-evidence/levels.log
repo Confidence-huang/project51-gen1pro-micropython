@@ -1,0 +1,15 @@
+TX ASCII 0
+[LED] OK level=0 RGB=0,0,0
+PASS: 16 warm pixels, RGB=0,0,0, GRB order, zero reset tail.
+TX ASCII 1
+[LED] OK level=1 RGB=8,6,2
+PASS: 16 warm pixels, RGB=8,6,2, GRB order, zero reset tail.
+TX ASCII 2
+[LED] OK level=2 RGB=24,18,6
+PASS: 16 warm pixels, RGB=24,18,6, GRB order, zero reset tail.
+TX ASCII 3
+[LED] OK level=3 RGB=48,36,12
+PASS: 16 warm pixels, RGB=48,36,12, GRB order, zero reset tail.
+TX ASCII 4
+[LED] OK level=4 RGB=96,72,24
+PASS: 16 warm pixels, RGB=96,72,24, GRB order, zero reset tail.

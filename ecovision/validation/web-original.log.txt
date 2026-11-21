@@ -1,0 +1,79 @@
+✖ 完成真实 OpenAI 兼容多轮 Tool-Calling 并准确返回数据边界 (28.7563ms)
+✖ 上游模型不支持 tools 时自动走服务端预查上下文降级 (4.4271ms)
+✖ 未配置 Key 时返回 503 且状态接口优雅提示不报错 (2.5114ms)
+✖ HTTP 路由强制校验 Origin、方法、Body 上限与按 CF-Connecting-IP 限流 (3.3794ms)
+✔ 仅对白名单前端源返回只读 CORS 头 (0.5572ms)
+✔ 保留旧模拟载荷的 lx 数值 (1.9565ms)
+✔ 允许板载 AHT20 与未标定的光敏 ADC (0.7052ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 3
+ℹ fail 4
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 144.1376
+
+✖ failing tests:
+
+test at pipeline\agent.test.js:38:1
+✖ 完成真实 OpenAI 兼容多轮 Tool-Calling 并准确返回数据边界 (28.7563ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  502 !== 200
+  
+      at TestContext.<anonymous> (file:///D:/%E7%A7%BB%E8%BF%9C%E6%9D%AF%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3/chatgpt%20work/docs/delivery/2026-11-21/web-repo/pipeline/agent.test.js:108:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 502,
+    expected: 200,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at pipeline\agent.test.js:130:1
+✖ 上游模型不支持 tools 时自动走服务端预查上下文降级 (4.4271ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  502 !== 200
+  
+      at TestContext.<anonymous> (file:///D:/%E7%A7%BB%E8%BF%9C%E6%9D%AF%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3/chatgpt%20work/docs/delivery/2026-11-21/web-repo/pipeline/agent.test.js:169:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 502,
+    expected: 200,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at pipeline\agent.test.js:179:1
+✖ 未配置 Key 时返回 503 且状态接口优雅提示不报错 (2.5114ms)
+  [TypeError: fetch failed] {
+    [cause]: Error: connect EACCES 127.0.0.1:55763
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1864:16) {
+      errno: -4092,
+      code: 'EACCES',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 55763
+    }
+  }
+
+test at pipeline\agent.test.js:218:1
+✖ HTTP 路由强制校验 Origin、方法、Body 上限与按 CF-Connecting-IP 限流 (3.3794ms)
+  [TypeError: fetch failed] {
+    [cause]: Error: connect EACCES 127.0.0.1:55766
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1864:16) {
+      errno: -4092,
+      code: 'EACCES',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 55766
+    }
+  }

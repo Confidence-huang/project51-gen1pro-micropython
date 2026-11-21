@@ -1,0 +1,25 @@
+Product: MDK Plus 5.36
+Component: ARM Compiler 6.16
+Tool: armclang [5dfeb700]
+
+Target: unspecified-arm-none-unspecified
+{
+  "compiler": "Keil AC6 armclang 6.16; Cortex-M4 Thumb; C99 -Oz -Wall -Wextra -Werror",
+  "kind": "relocatable object, not linked firmware",
+  "sections_bytes": {
+    ".text": 0,
+    ".text.ev_init": 60,
+    ".text.ev_reset_vision": 34,
+    ".text.ev_step": 1284,
+    ".text.ev_debounce": 58,
+    ".rodata.cst16": 64
+  },
+  "stack_wcet": "NOT MEASURED on target",
+  "host_struct_bytes": {
+    "EvState": 276,
+    "EvInput": 72,
+    "EvOutput": 14,
+    "EvDebounce": 8
+  }
+}
+

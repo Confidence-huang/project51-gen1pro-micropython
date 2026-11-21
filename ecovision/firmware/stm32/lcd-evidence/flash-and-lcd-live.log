@@ -1,0 +1,61 @@
+   0.338 [VISION] RX seq=566 count=14 valid=1 uptime=575885 link=dbbc82ca914a114c boot=fd25167e8e094e02
+   1.354 [VISION] RX seq=567 count=14 valid=1 uptime=576902 link=dbbc82ca914a114c boot=fd25167e8e094e02
+   2.360 [VISION] RX seq=568 count=13 valid=1 uptime=577908 link=dbbc82ca914a114c boot=fd25167e8e094e02
+   3.372 [VISION] RX seq=569 count=12 valid=1 uptime=578919 link=dbbc82ca914a114c boot=fd25167e8e094e02
+   4.400 [VISION] RX seq=570 count=13 valid=1 uptime=579947 link=dbbc82ca914a114c boot=fd25167e8e094e02
+   5.406 [VISION] RX seq=571 count=13 valid=1 uptime=580953 link=dbbc82ca914a114c boot=fd25167e8e094e02
+   6.416 [VISION] RX seq=572 count=13 valid=1 uptime=581963 link=dbbc82ca914a114c boot=fd25167e8e094e02
+   7.420 [VISION] RX seq=573 count=14 valid=1 uptime=582967 link=dbbc82ca914a114c boot=fd25167e8e094e02
+   8.432 [VISION] RX seq=574 count=13 valid=1 uptime=583979 link=dbbc82ca914a114c boot=fd25167e8e094e02
+   9.438 [VISION] RX seq=575 count=13 valid=1 uptime=584984 link=dbbc82ca914a114c boot=fd25167e8e094e02
+  10.446 [VISION] RX seq=576 count=13 valid=1 uptime=585992 link=dbbc82ca914a114c boot=fd25167e8e094e02
+  11.462 [VISION] RX seq=577 count=13 valid=1 uptime=587009 link=dbbc82ca914a114c boot=fd25167e8e094e02
+  12.466 [VISION] RX seq=578 count=13 valid=1 uptime=588014 link=dbbc82ca914a114c boot=fd25167e8e094e02
+  15.467 EcoVision F413ZH uart-lcd-20261120.2, interface baseline 1.0.0
+  15.471 FreeRTOS heartbeat running; HAL TIM6 tick OK
+  15.617 [LED] READY level=0 OFF; ASCII 0..4 selects warm brightness
+  15.622 [FAN] READY level=0; F0 OFF, F1..F4 PWM 40/60/80/100%
+  16.415 [LCD] ST7735 SPI1 PA5/PA7 DC=PF12 CS=PD14 init=OK
+  16.476 [VISION] WAIT link=7960acc9546ea2b4 (UART2 PD5 TX/PD6 RX, 115200 8N1)
+  16.482 [VISION] heap_free=6216 bytes; task_stack_free=2584 bytes
+  16.486 [VISION] RX fault=0x40000; discard and rehandshake
+  16.490 [VISION] UNKNOWN timeout/restart; previous count invalid
+  16.553 [VISION] WAIT link=68283a1be10dd771 (UART2 PD5 TX/PD6 RX, 115200 8N1)
+  16.559 [VISION] TX $EVQ,68283a1be10dd771*1485
+  16.588 [VISION] HELLO link=68283a1be10dd771 boot=fd25167e8e094e02
+  17.587 [LCD] updated count=13 valid=1 seq=583
+  17.595 [VISION] RX seq=583 count=13 valid=1 uptime=593082 link=68283a1be10dd771 boot=fd25167e8e094e02
+  18.594 [LCD] updated count=13 valid=1 seq=584
+  18.602 [VISION] RX seq=584 count=13 valid=1 uptime=594090 link=68283a1be10dd771 boot=fd25167e8e094e02
+  19.595 [LCD] updated count=14 valid=1 seq=585
+  19.603 [VISION] RX seq=585 count=14 valid=1 uptime=595091 link=68283a1be10dd771 boot=fd25167e8e094e02
+  20.616 [LCD] updated count=14 valid=1 seq=586
+  20.624 [VISION] RX seq=586 count=14 valid=1 uptime=596110 link=68283a1be10dd771 boot=fd25167e8e094e02
+  21.627 [LCD] updated count=13 valid=1 seq=587
+  21.635 [VISION] RX seq=587 count=13 valid=1 uptime=597122 link=68283a1be10dd771 boot=fd25167e8e094e02
+  22.644 [LCD] updated count=14 valid=1 seq=588
+  22.652 [VISION] RX seq=588 count=14 valid=1 uptime=598140 link=68283a1be10dd771 boot=fd25167e8e094e02
+  23.661 [LCD] updated count=14 valid=1 seq=589
+  23.669 [VISION] RX seq=589 count=14 valid=1 uptime=599156 link=68283a1be10dd771 boot=fd25167e8e094e02
+  24.668 [LCD] updated count=13 valid=1 seq=590
+  24.676 [VISION] RX seq=590 count=13 valid=1 uptime=600164 link=68283a1be10dd771 boot=fd25167e8e094e02
+  25.685 [LCD] updated count=14 valid=1 seq=591
+  25.693 [VISION] RX seq=591 count=14 valid=1 uptime=601181 link=68283a1be10dd771 boot=fd25167e8e094e02
+  26.692 [LCD] updated count=13 valid=1 seq=592
+  26.700 [VISION] RX seq=592 count=13 valid=1 uptime=602188 link=68283a1be10dd771 boot=fd25167e8e094e02
+  27.711 [LCD] updated count=14 valid=1 seq=593
+  27.719 [VISION] RX seq=593 count=14 valid=1 uptime=603207 link=68283a1be10dd771 boot=fd25167e8e094e02
+  28.722 [LCD] updated count=14 valid=1 seq=594
+  28.730 [VISION] RX seq=594 count=14 valid=1 uptime=604217 link=68283a1be10dd771 boot=fd25167e8e094e02
+  29.739 [LCD] updated count=14 valid=1 seq=595
+  29.747 [VISION] RX seq=595 count=14 valid=1 uptime=605235 link=68283a1be10dd771 boot=fd25167e8e094e02
+  30.744 [LCD] updated count=13 valid=1 seq=596
+  30.752 [VISION] RX seq=596 count=13 valid=1 uptime=606237 link=68283a1be10dd771 boot=fd25167e8e094e02
+  31.749 [LCD] updated count=13 valid=1 seq=597
+  31.757 [VISION] RX seq=597 count=13 valid=1 uptime=607243 link=68283a1be10dd771 boot=fd25167e8e094e02
+  32.764 [LCD] updated count=13 valid=1 seq=598
+  32.772 [VISION] RX seq=598 count=13 valid=1 uptime=608258 link=68283a1be10dd771 boot=fd25167e8e094e02
+  33.773 [LCD] updated count=13 valid=1 seq=599
+  33.781 [VISION] RX seq=599 count=13 valid=1 uptime=609269 link=68283a1be10dd771 boot=fd25167e8e094e02
+  34.788 [LCD] updated count=14 valid=1 seq=600
+  34.796 [VISION] RX seq=600 count=14 valid=1 uptime=610284 link=68283a1be10dd771 boot=fd25167e8e094e02

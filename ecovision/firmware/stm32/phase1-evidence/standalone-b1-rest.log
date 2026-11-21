@@ -1,0 +1,27 @@
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.22.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : [redacted]
+ST-LINK FW  : V2J46M32
+Board       : --
+Voltage     : 3.24V
+SWD freq    : 4000 KHz
+Connect mode: Hot Plug
+Reset mode  : Software reset
+Device ID   : 0x463
+Revision ID : Rev A
+Device name : STM32F413/F423
+NVM size  : 1.5 MBytes
+Device type : MCU
+Device CPU  : Cortex-M4
+BL Version  : 0x90
+
+
+Reading 32-bit memory content
+  Size          : 4 Bytes
+  Address:      : 0x40020810
+0x40020810 : 00002000
+
+
+GPIOC_IDR=0x00002000, PC13=1; button assumed released

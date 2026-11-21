@@ -1,0 +1,13 @@
+{
+  "command": "node --test pipeline/telemetry.test.js pipeline/agent.test.js",
+  "repository": "Confidence-huang/project51-classroom-dashboard",
+  "base_commit": "ca29f70c6a3bbeea8397eba141d4824a444f35e7",
+  "environment": "outside sandbox, local HTTP mocks and in-memory SQLite",
+  "exit_code": 0,
+  "tests": 7,
+  "passed": 7,
+  "failed": 0,
+  "previous_sandbox_attempt": "3 passed, 4 failed; EACCES connecting to 127.0.0.1. Preserved in web-original.log and software-checks.json.",
+  "real_model_call": false,
+  "hardware_test": false
+}

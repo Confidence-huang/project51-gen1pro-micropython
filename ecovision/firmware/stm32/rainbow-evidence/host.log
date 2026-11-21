@@ -1,0 +1,4 @@
+test_ws281x_rainbow.c
+ws281x_rainbow.c
+正在生成代码...
+PASS: GRB, four-pixel trail, reverse wrap, debounce, repeat presses and both B1 polarities

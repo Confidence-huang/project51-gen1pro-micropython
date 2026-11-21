@@ -1,0 +1,3 @@
+    AppFan_DutyPercent                       0x080016b5   Thumb Code    18  app_fan.o(.text.AppFan_DutyPercent)
+    AppFan_Init                              0x080016c9   Thumb Code    92  app_fan.o(.text.AppFan_Init)
+    AppFan_SetLevel                          0x08001725   Thumb Code   174  app_fan.o(.text.AppFan_SetLevel)

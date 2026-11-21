@@ -1,0 +1,26 @@
+   0.251 [VISION] RX seq=4 count=3 valid=1 uptime=4508 link=d0ce2d81cfcba65b boot=f122ad66b50b5839
+   1.259 [VISION] RX seq=5 count=3 valid=1 uptime=5516 link=d0ce2d81cfcba65b boot=f122ad66b50b5839
+   2.267 [VISION] RX seq=6 count=3 valid=1 uptime=6524 link=d0ce2d81cfcba65b boot=f122ad66b50b5839
+   3.275 [VISION] RX seq=7 count=3 valid=1 uptime=7532 link=d0ce2d81cfcba65b boot=f122ad66b50b5839
+   4.284 [VISION] RX seq=8 count=12 valid=1 uptime=8541 link=d0ce2d81cfcba65b boot=f122ad66b50b5839
+   5.293 [VISION] RX seq=9 count=12 valid=1 uptime=9550 link=d0ce2d81cfcba65b boot=f122ad66b50b5839
+   6.303 [VISION] RX seq=10 count=12 valid=1 uptime=10559 link=d0ce2d81cfcba65b boot=f122ad66b50b5839
+   7.313 [VISION] RX seq=11 count=12 valid=1 uptime=11568 link=d0ce2d81cfcba65b boot=f122ad66b50b5839
+   8.320 [VISION] RX seq=12 count=0 valid=0 uptime=12577 link=d0ce2d81cfcba65b boot=f122ad66b50b5839
+   9.330 [VISION] RX seq=13 count=0 valid=0 uptime=13586 link=d0ce2d81cfcba65b boot=f122ad66b50b5839
+  10.338 [VISION] RX seq=14 count=0 valid=0 uptime=14595 link=d0ce2d81cfcba65b boot=f122ad66b50b5839
+  11.348 [VISION] RX seq=15 count=0 valid=0 uptime=15604 link=d0ce2d81cfcba65b boot=f122ad66b50b5839
+  12.309 [VISION] UNKNOWN timeout/restart; previous count invalid
+  12.316 [VISION] WAIT link=438c430279f88f58 (UART2 PD5 TX/PD6 RX, 115200 8N1)
+  12.322 [VISION] TX $EVQ,438c430279f88f58*CF73
+  12.334 [VISION] HELLO link=438c430279f88f58 boot=f122ad66b50b5839
+  12.352 [VISION] RX seq=16 count=0 valid=0 uptime=16608 link=438c430279f88f58 boot=f122ad66b50b5839
+  13.362 [VISION] RX seq=17 count=0 valid=1 uptime=17617 link=438c430279f88f58 boot=f122ad66b50b5839
+  14.360 [VISION] RX seq=18 count=0 valid=1 uptime=18617 link=438c430279f88f58 boot=f122ad66b50b5839
+  15.370 [VISION] RX seq=19 count=0 valid=1 uptime=19626 link=438c430279f88f58 boot=f122ad66b50b5839
+  16.370 [VISION] RX seq=20 count=3 valid=1 uptime=20626 link=438c430279f88f58 boot=f122ad66b50b5839
+  17.370 [VISION] RX seq=21 count=3 valid=1 uptime=21626 link=438c430279f88f58 boot=f122ad66b50b5839
+  18.370 [VISION] RX seq=22 count=3 valid=1 uptime=22626 link=438c430279f88f58 boot=f122ad66b50b5839
+  19.372 [VISION] RX seq=23 count=3 valid=1 uptime=23627 link=438c430279f88f58 boot=f122ad66b50b5839
+  20.372 [VISION] RX seq=24 count=12 valid=1 uptime=24627 link=438c430279f88f58 boot=f122ad66b50b5839
+  21.372 [VISION] RX seq=25 count=12 valid=1 uptime=25628 link=438c430279f88f58 boot=f122ad66b50b5839

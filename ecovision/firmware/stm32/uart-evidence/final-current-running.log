@@ -1,0 +1,15 @@
+   0.978 [VISION] RX seq=9 count=15 valid=1 uptime=10524 link=dbbc82ca914a114c boot=fd25167e8e094e02
+   2.000 [VISION] RX seq=10 count=14 valid=1 uptime=11544 link=dbbc82ca914a114c boot=fd25167e8e094e02
+   3.002 [VISION] RX seq=11 count=15 valid=1 uptime=12548 link=dbbc82ca914a114c boot=fd25167e8e094e02
+   4.010 [VISION] RX seq=12 count=16 valid=1 uptime=13557 link=dbbc82ca914a114c boot=fd25167e8e094e02
+   5.020 [VISION] RX seq=13 count=15 valid=1 uptime=14566 link=dbbc82ca914a114c boot=fd25167e8e094e02
+   6.037 [VISION] RX seq=14 count=15 valid=1 uptime=15582 link=dbbc82ca914a114c boot=fd25167e8e094e02
+   7.057 [VISION] RX seq=15 count=15 valid=1 uptime=16601 link=dbbc82ca914a114c boot=fd25167e8e094e02
+   8.059 [VISION] RX seq=16 count=15 valid=1 uptime=17605 link=dbbc82ca914a114c boot=fd25167e8e094e02
+   9.079 [VISION] RX seq=17 count=15 valid=1 uptime=18623 link=dbbc82ca914a114c boot=fd25167e8e094e02
+  10.101 [VISION] RX seq=18 count=15 valid=1 uptime=19644 link=dbbc82ca914a114c boot=fd25167e8e094e02
+  11.107 [VISION] RX seq=19 count=15 valid=1 uptime=20652 link=dbbc82ca914a114c boot=fd25167e8e094e02
+  12.113 [VISION] RX seq=20 count=15 valid=1 uptime=21658 link=dbbc82ca914a114c boot=fd25167e8e094e02
+  13.133 [VISION] RX seq=21 count=15 valid=1 uptime=22677 link=dbbc82ca914a114c boot=fd25167e8e094e02
+  14.137 [VISION] RX seq=22 count=15 valid=1 uptime=23681 link=dbbc82ca914a114c boot=fd25167e8e094e02
+b'['

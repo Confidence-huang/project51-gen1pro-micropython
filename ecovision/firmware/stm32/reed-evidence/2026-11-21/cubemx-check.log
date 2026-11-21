@@ -1,0 +1,37 @@
+
+  C:\Users\du335\AppData\Local\Temp\ecovision-reed-cubemx-70c3d0af4cf4495791eadc3bb5120f7c\Src\main.c:80:/* USER CODE BEGIN PV */
+  C:\Users\du335\AppData\Local\Temp\ecovision-reed-cubemx-70c3d0af4cf4495791eadc3bb5120f7c\Src\main.c:81:static const uint8_t boot_message[] =
+> C:\Users\du335\AppData\Local\Temp\ecovision-reed-cubemx-70c3d0af4cf4495791eadc3bb5120f7c\Src\main.c:82:    "EcoVision F413ZH reed-20261121.1, interface baseline 1.0.0\r\n"
+  C:\Users\du335\AppData\Local\Temp\ecovision-reed-cubemx-70c3d0af4cf4495791eadc3bb5120f7c\Src\main.c:83:    "FreeRTOS heartbeat running; HAL TIM6 tick OK\r\n";
+  C:\Users\du335\AppData\Local\Temp\ecovision-reed-cubemx-70c3d0af4cf4495791eadc3bb5120f7c\Src\main.c:84:/* USER CODE END PV */
+  C:\Users\du335\AppData\Local\Temp\ecovision-reed-cubemx-70c3d0af4cf4495791eadc3bb5120f7c\Src\main.c:85:
+  C:\Users\du335\AppData\Local\Temp\ecovision-reed-cubemx-70c3d0af4cf4495791eadc3bb5120f7c\Src\main.c:530:  GPIO_InitStruct.Pin = GPIO_PIN_13;
+  C:\Users\du335\AppData\Local\Temp\ecovision-reed-cubemx-70c3d0af4cf4495791eadc3bb5120f7c\Src\main.c:531:  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+> C:\Users\du335\AppData\Local\Temp\ecovision-reed-cubemx-70c3d0af4cf4495791eadc3bb5120f7c\Src\main.c:532:  GPIO_InitStruct.Pull = GPIO_PULLUP;
+  C:\Users\du335\AppData\Local\Temp\ecovision-reed-cubemx-70c3d0af4cf4495791eadc3bb5120f7c\Src\main.c:533:  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+  C:\Users\du335\AppData\Local\Temp\ecovision-reed-cubemx-70c3d0af4cf4495791eadc3bb5120f7c\Src\main.c:534:
+  C:\Users\du335\AppData\Local\Temp\ecovision-reed-cubemx-70c3d0af4cf4495791eadc3bb5120f7c\Src\main.c:535:  /*Configure GPIO pins : LD1_Pin FAN_AIN1_Pin LD3_Pin LD2_Pin */
+  C:\Users\du335\AppData\Local\Temp\ecovision-reed-cubemx-70c3d0af4cf4495791eadc3bb5120f7c\Src\main.c:547:  HAL_GPIO_Init(FAN_STBY_GPIO_Port, &GPIO_InitStruct);
+  C:\Users\du335\AppData\Local\Temp\ecovision-reed-cubemx-70c3d0af4cf4495791eadc3bb5120f7c\Src\main.c:548:
+> C:\Users\du335\AppData\Local\Temp\ecovision-reed-cubemx-70c3d0af4cf4495791eadc3bb5120f7c\Src\main.c:549:  /*Configure GPIO pin : REED_DO_Pin */
+> C:\Users\du335\AppData\Local\Temp\ecovision-reed-cubemx-70c3d0af4cf4495791eadc3bb5120f7c\Src\main.c:550:  GPIO_InitStruct.Pin = REED_DO_Pin;
+  C:\Users\du335\AppData\Local\Temp\ecovision-reed-cubemx-70c3d0af4cf4495791eadc3bb5120f7c\Src\main.c:551:  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+> C:\Users\du335\AppData\Local\Temp\ecovision-reed-cubemx-70c3d0af4cf4495791eadc3bb5120f7c\Src\main.c:552:  GPIO_InitStruct.Pull = GPIO_PULLUP;
+> C:\Users\du335\AppData\Local\Temp\ecovision-reed-cubemx-70c3d0af4cf4495791eadc3bb5120f7c\Src\main.c:553:  HAL_GPIO_Init(REED_DO_GPIO_Port, &GPIO_InitStruct);
+  C:\Users\du335\AppData\Local\Temp\ecovision-reed-cubemx-70c3d0af4cf4495791eadc3bb5120f7c\Src\main.c:554:
+  C:\Users\du335\AppData\Local\Temp\ecovision-reed-cubemx-70c3d0af4cf4495791eadc3bb5120f7c\Src\main.c:555:  /*Configure GPIO pin : FAN_AIN2_Pin */
+  C:\Users\du335\AppData\Local\Temp\ecovision-reed-cubemx-70c3d0af4cf4495791eadc3bb5120f7c\Src\main.c:556:  GPIO_InitStruct.Pin = FAN_AIN2_Pin;
+  C:\Users\du335\AppData\Local\Temp\ecovision-reed-cubemx-70c3d0af4cf4495791eadc3bb5120f7c\Src\main.c:564:  GPIO_InitStruct.Pin = GPIO_PIN_13;
+  C:\Users\du335\AppData\Local\Temp\ecovision-reed-cubemx-70c3d0af4cf4495791eadc3bb5120f7c\Src\main.c:565:  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+> C:\Users\du335\AppData\Local\Temp\ecovision-reed-cubemx-70c3d0af4cf4495791eadc3bb5120f7c\Src\main.c:566:  GPIO_InitStruct.Pull = GPIO_PULLUP;
+  C:\Users\du335\AppData\Local\Temp\ecovision-reed-cubemx-70c3d0af4cf4495791eadc3bb5120f7c\Src\main.c:567:  HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);
+  C:\Users\du335\AppData\Local\Temp\ecovision-reed-cubemx-70c3d0af4cf4495791eadc3bb5120f7c\Src\main.c:568:  /* USER CODE END MX_GPIO_Init_2 */
+  C:\Users\du335\AppData\Local\Temp\ecovision-reed-cubemx-70c3d0af4cf4495791eadc3bb5120f7c\Src\main.c:569:}
+  C:\Users\du335\AppData\Local\Temp\ecovision-reed-cubemx-70c3d0af4cf4495791eadc3bb5120f7c\Src\main.c:603:  for (;;)
+  C:\Users\du335\AppData\Local\Temp\ecovision-reed-cubemx-70c3d0af4cf4495791eadc3bb5120f7c\Src\main.c:604:  {
+> C:\Users\du335\AppData\Local\Temp\ecovision-reed-cubemx-70c3d0af4cf4495791eadc3bb5120f7c\Src\main.c:605:    AppReed_Poll();
+  C:\Users\du335\AppData\Local\Temp\ecovision-reed-cubemx-70c3d0af4cf4495791eadc3bb5120f7c\Src\main.c:606:    if ((uint32_t)(HAL_GetTick() - heartbeat_at) >= 500U)
+  C:\Users\du335\AppData\Local\Temp\ecovision-reed-cubemx-70c3d0af4cf4495791eadc3bb5120f7c\Src\main.c:607:    {
+  C:\Users\du335\AppData\Local\Temp\ecovision-reed-cubemx-70c3d0af4cf4495791eadc3bb5120f7c\Src\main.c:608:      heartbeat_at = HAL_GetTick();
+
+

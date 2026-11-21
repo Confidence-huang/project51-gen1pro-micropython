@@ -1,0 +1,9 @@
+test_default_interval_changes_each_simulated_reading (test_payload.ClassroomPayloadTests.test_default_interval_changes_each_simulated_reading) ... ok
+test_four_simulated_readings_match_dashboard_contract (test_payload.ClassroomPayloadTests.test_four_simulated_readings_match_dashboard_contract) ... ok
+test_invalid_sequence_and_time_are_rejected (test_payload.ClassroomPayloadTests.test_invalid_sequence_and_time_are_rejected) ... ok
+test_real_environment_keeps_uncalibrated_light_and_missing_people_explicit (test_payload.ClassroomPayloadTests.test_real_environment_keeps_uncalibrated_light_and_missing_people_explicit) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK

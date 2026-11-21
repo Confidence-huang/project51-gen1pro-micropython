@@ -1,0 +1,5 @@
+    Reset_Handler                            0x08000279   Thumb Code     8  startup_stm32f413xx.o(.text)
+    HAL_GPIO_TogglePin                       0x08000909   Thumb Code    16  stm32f4xx_hal_gpio.o(.text.HAL_GPIO_TogglePin)
+    HAL_UART_Transmit                        0x08001301   Thumb Code   388  stm32f4xx_hal_uart.o(.text.HAL_UART_Transmit)
+    main                                     0x08001641   Thumb Code   442  main.o(.text.main)
+PASS: console, heartbeat and reset entry points linked. Sensor/servo demo entry points absent.

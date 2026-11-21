@@ -1,0 +1,61 @@
+Timestamp: 2026-11-21T19:16:09.2398631+08:00
+SHA256: 8224461AFBE616371A8FAC5924C34D07DE5DBF9121EBC72A3B27BAD85F66C4CA
+Command: STM32_Programmer_CLI.exe -c port=SWD sn=066BFF535153755087071921 -w <reed-20261121.1.hex> -v -rst
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.22.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 066BFF535153755087071921
+ST-LINK FW  : V2J46M32
+Board       : --
+Voltage     : 3.25V
+SWD freq    : 4000 KHz
+Connect mode: Normal
+Reset mode  : Software reset
+Device ID   : 0x463
+Revision ID : Rev A
+Device name : STM32F413/F423
+NVM size  : 1.5 MBytes
+Device type : MCU
+Device CPU  : Cortex-M4
+BL Version  : 0x90
+
+
+
+Opening and parsing file: EcoVision_F413ZH-reed-20261121.1.hex
+
+
+Memory Programming ...
+  File          : EcoVision_F413ZH-reed-20261121.1.hex
+  Size          : 46.41 KB 
+  Address       : 0x08000000
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 2]
+Download in Progress:
+�������������������������������������������������� 0%
+�������������������������������������������������� 100%
+
+File download complete
+Time elapsed during download operation: 00:00:01.234
+
+
+
+Verifying...
+
+
+Read progress:
+�������������������������������������������������� 50%
+�������������������������������������������������� 100%
+
+Time elapsed during verifying operation: 00:00:00.300
+
+
+Download verified successfully
+
+
+
+MCU Reset
+
+Software reset is performed

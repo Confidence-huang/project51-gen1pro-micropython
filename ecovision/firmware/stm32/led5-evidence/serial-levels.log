@@ -1,0 +1,25 @@
+TX: 0
+[LED] OK level=0 RGB=0,0,0
+SWD PASS: 16 white pixels encoded at RGB=0; reset tail zero.
+TX: 1
+[LED] OK level=1 RGB=8,8,8
+SWD PASS: 16 white pixels encoded at RGB=8; reset tail zero.
+TX: 2
+[LED] OK level=2 RGB=24,24,24
+SWD PASS: 16 white pixels encoded at RGB=24; reset tail zero.
+TX: 3
+[LED] OK level=3 RGB=48,48,48
+SWD PASS: 16 white pixels encoded at RGB=48; reset tail zero.
+TX: 4
+[LED] OK level=4 RGB=96,96,96
+SWD PASS: 16 white pixels encoded at RGB=96; reset tail zero.
+TX: 0<CR><LF>
+[LED] OK level=0 RGB=0,0,0
+TX: x
+[LED] ERROR byte=0x78; use ASCII 0..4
+TX: 5
+[LED] ERROR byte=0x35; use ASCII 0..4
+TX: 2<CR><LF>0<CR><LF>
+[LED] OK level=2 RGB=24,24,24
+[LED] OK level=0 RGB=0,0,0
+RESET PASS: startup level=0 OFF.

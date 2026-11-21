@@ -1,0 +1,124 @@
+test_algorithm.c
+ecovision_algorithm.c
+正在生成代码...
+PASS occupancy/dwell/hysteresis/vacancy
+PASS raw faults/filter/recovery/stale
+PASS duplicate/backward/timeout/reacquisition/invalid
+PASS fault hold/off/manual yield/local off
+PASS tick wrap/debounce
+PASS gap cannot bridge dwell/future timestamp
+PASS all channel ranges/unknown/affected controls
+PASS session reset/reboot
+RESOURCE state=276 input=72 output=14 debounce=8 bytes
+replay.c
+ecovision_algorithm.c
+正在生成代码...
+{
+  "data_source": "SYNTHETIC; no hardware logs available",
+  "scenarios": {
+    "stable": {
+      "rows": 121,
+      "fan_actions": 0,
+      "led_actions": 1,
+      "deterministic_sha256": "aee401870620786114ce76c82575a1979fb5a3c615933d8bf37d8c3197633107",
+      "original_policy_mismatches": 0,
+      "original_fan_actions": 0,
+      "unwanted_fan_actions": 0
+    },
+    "step": {
+      "rows": 81,
+      "fan_actions": 2,
+      "led_actions": 1,
+      "deterministic_sha256": "3d5e799ef0ad82a410df00d6f1c809b5f18f58f8b35499a66cdd2c16d30d8709",
+      "original_policy_mismatches": 0,
+      "original_fan_actions": 2,
+      "on_response_ms": 5000,
+      "off_response_ms": 5000
+    },
+    "isolated_spike": {
+      "rows": 61,
+      "fan_actions": 0,
+      "led_actions": 1,
+      "deterministic_sha256": "6a20a864721434a576eb7f50ab7dab5f1bc231cebb3de88ffbae28b99eafa8d2",
+      "original_policy_mismatches": 0,
+      "original_fan_actions": 0,
+      "unwanted_fan_actions": 0
+    },
+    "vacancy": {
+      "rows": 61,
+      "fan_actions": 2,
+      "led_actions": 2,
+      "deterministic_sha256": "291be25a44a228fc4cc86d18c2b102d0f387c006a85734368710f8ad5da52fb2",
+      "original_policy_mismatches": 0,
+      "original_fan_actions": 2
+    },
+    "fault_recover": {
+      "rows": 111,
+      "fan_actions": 3,
+      "led_actions": 3,
+      "deterministic_sha256": "45931764c6277ba6aa3561f8f4e15380a0d16292a03c07dc16ff1a4e0803eaf7"
+    },
+    "dropout": {
+      "rows": 111,
+      "fan_actions": 3,
+      "led_actions": 3,
+      "deterministic_sha256": "bfd6fa100a0d48bf8e4e4b615fe2c320ef956c7801a394ce3d90d2e33727dbca"
+    },
+    "manual": {
+      "rows": 61,
+      "fan_actions": 3,
+      "led_actions": 3,
+      "deterministic_sha256": "f7d479696605fcc2058f20242d232d698b85dee75f6179f1a05468c5c36e3c52"
+    },
+    "wrap": {
+      "rows": 21,
+      "fan_actions": 1,
+      "led_actions": 1,
+      "deterministic_sha256": "ab54af127dbe8440801b08f8601dc6b9824e0134e12345f33da2e89cd2448562"
+    }
+  },
+  "sampling": {
+    "200": {
+      "occupied_at_ms": 400,
+      "fan_at_ms": 5400
+    },
+    "1000": {
+      "occupied_at_ms": 2000,
+      "fan_at_ms": 7000
+    },
+    "2000": {
+      "occupied_at_ms": 4000,
+      "fan_at_ms": 10000
+    },
+    "irregular": {
+      "fan_at_ms": 7200
+    }
+  },
+  "environment_filter": {
+    "isolated_spikes_removed": true,
+    "step_delay_ms": 1000,
+    "light_need": "UNKNOWN (uncalibrated)"
+  },
+  "filter_comparison": {
+    "raw": {
+      "MAE_c": 0.1902,
+      "spike_peak_error_c": 8.0,
+      "step_90pct_delay_ms": 0
+    },
+    "median3": {
+      "MAE_c": 0.0738,
+      "spike_peak_error_c": 0.1,
+      "step_90pct_delay_ms": 1000
+    },
+    "mean3": {
+      "MAE_c": 0.1934,
+      "spike_peak_error_c": 2.6833,
+      "step_90pct_delay_ms": 2000
+    },
+    "lowpass_alpha_025": {
+      "MAE_c": 0.279,
+      "spike_peak_error_c": 1.9936,
+      "step_90pct_delay_ms": 8000
+    }
+  }
+}

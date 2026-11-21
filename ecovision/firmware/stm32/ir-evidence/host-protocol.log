@@ -1,0 +1,9 @@
+test_ir_protocol.c
+ir_protocol.c
+正在生成代码...
+TX FA F1 55 55 01
+ACK F1
+REJECTED B0; RX 55 55 01
+RX F1 B0 00 including timestamp wrap
+Malformed capture, overflow rejection, and recovery
+Adjacent ACK and payload discarded as ambiguous

@@ -1,0 +1,4 @@
+test_tb6612.c
+app_fan.c
+正在生成代码...
+PASS: default standby, four PWM duties, direction, invalid level, standby-first stop, start failure

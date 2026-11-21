@@ -1,0 +1,4 @@
+test_environment_codec.c
+environment_codec.c
+正在生成代码...
+PASS: AHT20 CRC8, decode, malformed/CRC/busy/calibration rejection; ADC12 to ADC16 endpoints

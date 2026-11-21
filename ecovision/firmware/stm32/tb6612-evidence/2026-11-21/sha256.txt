@@ -1,0 +1,8 @@
+﻿
+
+Algorithm : SHA256
+Hash      : D0EEFB53E15CD0DA8F9600D24DA7F44906369D1E01149818CD86E8ABCBDE8276
+Path      : D:\移远杯项目文档\chatgpt work\firmware\stm32\tb6612-evidence\2026-11-21\EcoVision_F413ZH-fan-rebuild.hex
+
+
+

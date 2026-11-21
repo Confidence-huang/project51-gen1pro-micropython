@@ -1,0 +1,10 @@
+# Source: user-pasted board serial log, 2026-11-21; REED lines extracted in original order.
+# Not a complete serial capture. No event timestamps or synchronized magnet positions supplied.
+[REED] stable_do=0 window=UNKNOWN calibration=PENDING
+[REED] stable_do=1 window=UNKNOWN calibration=PENDING
+[REED] stable_do=0 window=UNKNOWN calibration=PENDING
+[REED] stable_do=1 window=UNKNOWN calibration=PENDING
+[REED] stable_do=0 window=UNKNOWN calibration=PENDING
+[REED] stable_do=1 window=UNKNOWN calibration=PENDING
+[REED] stable_do=0 window=UNKNOWN calibration=PENDING
+[REED] stable_do=1 window=UNKNOWN calibration=PENDING

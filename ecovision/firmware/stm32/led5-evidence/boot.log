@@ -1,0 +1,4 @@
+EcoVision F413ZH led5-20261118.1, interface baseline 1.0.0
+FreeRTOS heartbeat running; HAL TIM6 tick OK
+[LED] READY level=0 OFF; ASCII 0..4 selects white brightness
+

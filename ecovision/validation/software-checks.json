@@ -1,0 +1,72 @@
+[
+  {
+    "name": "board-original",
+    "exit_code": 0,
+    "summary": [
+      "test_four_simulated_readings_match_dashboard_contract (test_payload.ClassroomPayloadTests.test_four_simulated_readings_match_dashboard_contract) ... ok",
+      "test_invalid_sequence_and_time_are_rejected (test_payload.ClassroomPayloadTests.test_invalid_sequence_and_time_are_rejected) ... ok",
+      "test_real_environment_keeps_uncalibrated_light_and_missing_people_explicit (test_payload.ClassroomPayloadTests.test_real_environment_keeps_uncalibrated_light_and_missing_people_explicit) ... ok",
+      "",
+      "----------------------------------------------------------------------",
+      "Ran 4 tests in 0.000s",
+      "",
+      "OK"
+    ]
+  },
+  {
+    "name": "board-contracts",
+    "exit_code": 0,
+    "summary": [
+      "test_strict_shape_rejects_mistakes (test_contracts.ContractTests.test_strict_shape_rejects_mistakes) ... ok",
+      "test_uart_crc_and_frame_vectors (test_contracts.ContractTests.test_uart_crc_and_frame_vectors) ... ok",
+      "test_validity_and_units_in_telemetry_fixtures (test_contracts.ContractTests.test_validity_and_units_in_telemetry_fixtures) ... ok",
+      "",
+      "----------------------------------------------------------------------",
+      "Ran 17 tests in 0.070s",
+      "",
+      "OK"
+    ]
+  },
+  {
+    "name": "board-vision",
+    "exit_code": 0,
+    "summary": [
+      "UART EVH 000000000000000a",
+      "UART TX $EV1,000000000000000a,000000000000000b,0,0,0,0*53F3",
+      "UART EVH 000000000000000a",
+      "UART TX $EV1,000000000000000a,000000000000000b,1,1000,15,1*C46B",
+      "UART EVH 000000000000000a",
+      "UART TX $EV1,000000000000000a,000000000000000b,0,10,12,1*8B5F",
+      "UART TX $EV1,000000000000000a,000000000000000b,1,1010,0,1*3292",
+      "UART TX $EV1,000000000000000a,000000000000000b,2,2010,0,0*5B09"
+    ]
+  },
+  {
+    "name": "web-original",
+    "exit_code": 1,
+    "summary": [
+      "        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1864:16) {",
+      "      errno: -4092,",
+      "      code: 'EACCES',",
+      "      syscall: 'connect',",
+      "      address: '127.0.0.1',",
+      "      port: 55766",
+      "    }",
+      "  }"
+    ]
+  },
+  {
+    "name": "web-contracts",
+    "exit_code": 0,
+    "summary": [
+      "test_strict_shape_rejects_mistakes (test_contracts.ContractTests.test_strict_shape_rejects_mistakes) ... ok",
+      "test_uart_crc_and_frame_vectors (test_contracts.ContractTests.test_uart_crc_and_frame_vectors) ... ok",
+      "test_validity_and_units_in_telemetry_fixtures (test_contracts.ContractTests.test_validity_and_units_in_telemetry_fixtures) ... ok",
+      "",
+      "----------------------------------------------------------------------",
+      "Ran 17 tests in 0.072s",
+      "",
+      "OK (skipped=1)"
+    ]
+  }
+]

@@ -1,0 +1,5 @@
+
+Algorithm : SHA256
+Hash      : 87B817953D166C298583E6DB215AE92D354B23575292D5E88B621D48FE61D560
+Path      : D:\移远杯项目文档\chatgpt work\firmware\stm32\bh1750-evidence\2026-11-21\EcoVision_F413ZH-bh1750-20261121.1.hex
+
