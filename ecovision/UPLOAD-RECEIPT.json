@@ -1,0 +1,12 @@
+{
+  "verified_at_beijing": "2026-11-21T22:09:16+08:00",
+  "repository": "Confidence-huang/project51-gen1pro-micropython",
+  "branch": "chore/ecovision-checkpoint-20261121",
+  "prepared_snapshot_commit": "9b5e664720245bb85a697f92f1d2bfb464443184",
+  "remote_snapshot_sha_verified": "9b5e664720245bb85a697f92f1d2bfb464443184",
+  "branch_url": "https://github.com/Confidence-huang/project51-gen1pro-micropython/tree/chore/ecovision-checkpoint-20261121/ecovision",
+  "main_modified_by_this_upload": false,
+  "deployed": false,
+  "hardware_acceptance_changed": false,
+  "verification": "git ls-remote returned the exact prepared commit; later documentation-only commits are tracked by live Git."
+}

@@ -7,7 +7,7 @@
 - board包：Confidence-huang/project51-gen1pro-micropython。
 - web包：Confidence-huang/project51-classroom-dashboard。
 
-两个包均只新增ecovision/子目录，保持原仓库的src、README、package.json、部署docs、板端入口及已工作方案。当前没有远端写入；连接账号yillnnn在核查时对两仓均为push=false。待取得写入权限后，分别在新分支上传，不直接修改main或自动部署，不合并PR。
+两个包均只新增ecovision/子目录，保持原仓库的src、README、package.json、部署docs、板端入口及已工作方案。账号yillnnn的两仓写入权限已生效；本工程快照已上传到chore/ecovision-checkpoint-20261121，并通过远端SHA核对。未修改main、未部署、未合并PR；收据见UPLOAD-RECEIPT.json。
 
 板端包保存本机C/HAL、K230、算法、公共契约和相关检查。它与原仓库MicroPython镜像是不同运行版本，不会同时在一颗STM32运行。网页包保存本机独立cloud原型、沙盒、公共契约和软件检查，不覆盖线上Vite网页，不声称已经与现网接口适配。
 
